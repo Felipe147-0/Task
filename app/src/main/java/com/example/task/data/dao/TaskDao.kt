@@ -5,7 +5,9 @@ import com.example.task.data.model.Task
 object TaskDao {
     private val tasks = mutableListOf<Task>()
 
-    fun getAllTask(): List<Task> = tasks
+    fun getAllTask(): List<Task> {
+        return tasks
+    }
 
     fun addTask(task: Task){
         tasks.add(task)
@@ -13,5 +15,8 @@ object TaskDao {
 
     fun getTask(id: Long): Task{
         return tasks.stream().filter { item -> item.id == id }.findFirst().orElse(null)
+    }
+    fun deleteTask(id: Long){
+        tasks.removeIf { it.id == id }
     }
 }

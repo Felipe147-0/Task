@@ -20,9 +20,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/button_add"
         android:layout_margin="16dp"
-        android:contentDescription="Adcionar nova tarefa"
+        android:contentDescription="@string/adcionar_nova_tarefa"
         android:src="@drawable/Ic_add"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBaseline_toBottomOf="parent"/>
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

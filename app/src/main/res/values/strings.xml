@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Task</string>
+    <string name="adcionar_nova_tarefa">Adcionar nova tarefa</string>
 </resources>
